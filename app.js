@@ -35,5 +35,4 @@ mongoose.connect(config.get("mongodb.uri"),{
 })
 .then( () => console.log("Conected to MongoDB") )
 .catch( (error) => console.error("Error on MondoDB: ", error) );
-
 module.exports = app;

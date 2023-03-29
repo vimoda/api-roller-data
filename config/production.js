@@ -1,6 +1,6 @@
 module.exports = {
     server: {
-        port:80,
+        port:8080,
         domine:"api-rollercoin.com",
     },
 

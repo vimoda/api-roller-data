@@ -1,0 +1,11 @@
+Crear Usuario
+    adduser dvm1
+pedirá password
+    insertar pasword requiere pass raro
+Pedirá nombre y otras cosas mas
+    solo insertar nombre
+Confirmar informacion
+    yes
+
+Privilegios de usuario
+    usermod -aG sudo dvm1

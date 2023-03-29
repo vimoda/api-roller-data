@@ -1,0 +1,31 @@
+{
+  "name": "node-rollercoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "3.3.7",
+    "cookie-parser": "1.4.6",
+    "cors": "2.8.5",
+    "debug": "4.3.3",
+    "express": "4.17.2",
+    "mongoose": "6.2.0",
+    "mongoose-unique-validator": "3.0.0",
+    "morgan": "1.10.0",
+    "slug": "5.2.0",
+    "utf8": "3.0.0",
+    "xlsx": "0.18.2",
+    "xml2json": "0.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.21"
+  }
+}

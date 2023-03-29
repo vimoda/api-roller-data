@@ -1,0 +1,84 @@
+Tipos Asentamientos -> settlement_types
+    nombre: string => d_tipo_asenta => Colonia => 2 
+Tipos Zonas -> zones
+    name: string => d_zona => Urbano => 13
+Estados -> states
+    name: string => d_estado => Guerrero -> unique
+Ciudades -> cities
+    name: string => d_ciudad => Tecpan
+Municipios -> townships
+    name: string => D_mnpio => Tecpan
+    cp: string => d_CP => 40901
+Asentamientos -> towns
+    name: string => d_asenta => Cereso Lomas Bonitas
+    cp: 40900
+    type: string => d_tipo_asenta => Colonia
+    zone: string => d_zona -> Urbano
+
+Estados
+    _id
+    name
+    slugsubtitle
+        Municipios
+            _id
+            name:
+            Asentamientos
+                _id
+                name: string => d_asenta => Cereso Lomas Bonitas
+                cp: 40900
+                type: string => d_tipo_asenta => Colonia
+                zone: string => d_zona -> Urbano
+PostalCodes
+    _id
+    name_state
+    slug_state
+
+    name_city
+    slug_city
+
+    name_township
+    slug_township
+
+    name_town
+    slug_town
+
+    cp_office
+    cp
+    type
+    zone
+
+{
+  d_codigo: '91000',
+  d_asenta: 'Xalapa Enríquez Centro',
+  d_tipo_asenta: 'Colonia',
+  D_mnpio: 'Xalapa',
+  d_estado: 'Veracruz de Ignacio de la Llave',
+  d_ciudad: 'Xalapa-Enríquez',
+  d_CP: '91002',
+  c_estado: '30',
+  c_oficina: '91002',
+  c_tipo_asenta: '09',
+  c_mnpio: '087',
+  id_asenta_cpcons: '0001',
+  d_zona: 'Urbano',
+  c_cve_ciudad: '10'
+}
+
+02719|Ampliaci�n San Pedro Xalpa|Colonia|Azcapotzalco|Ciudad de M�xico|Ciudad de M�xico|02431|09|02431||09|002|0454|Urbano|02
+40900|Cereso Lomas Bonitas|Colonia|T�cpan de Galeana|Guerrero|T�cpan de Galeana|40901|12|40901||09|057|0001|Urbano|25
+d_codigo:01000 => Código Postal asentamiento => 0
+d_asenta:San �ngel => Nombre asentamiento => 1
+d_tipo_asenta:Colonia => Tipo de asentamiento (Catálogo SEPOMEX) => 2
+D_mnpio:�lvaro Obreg�n => Nombre Municipio (INEGI, Marzo 2013) => 3
+d_estado:Ciudad de M�xico => Nombre Entidad (INEGI, Marzo 2013) => 4
+d_ciudad:Ciudad de M�xico => Nombre Ciudad (Catálogo SEPOMEX) => 5
+d_CP:01001 => Código Postal de la Administración Postal que reparte al asentamiento => 6
+c_estado:09 => 7
+c_oficina:01001 => 8
+c_CP: => Campo Vacio => 9
+c_tipo_asenta:09 => 10
+c_mnpio:010 => 11
+id_asenta_cpcons:0001 => 12
+d_zona:Urbano => 13
+c_cve_ciudad:01 => 14
+

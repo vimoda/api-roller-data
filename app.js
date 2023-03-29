@@ -9,7 +9,6 @@ var cors = require('cors');
 
 //Import Routes
 var productsApiRouter = require('./components/product/routes/api');
-var refreshApiRouter = require('./components/refresh/routes/api');
 
 var app = express();
 app.use(cors());
@@ -24,20 +23,15 @@ app.use(cookieParser());
 //views
 app.set("views", "./views");
 app.set("view engine", "pug");
-
 app.use(express.static(path.join(__dirname, 'public')));
-
-
 //Routes Web
 //routes API
 app.use('/api/v1', productsApiRouter);
-
 
 //database conecction
 mongoose.connect(config.get("mongodb.uri"),{
     useNewUrlParser: true,
     useUnifiedTopology: true,
-
 })
 .then( () => console.log("Conected to MongoDB") )
 .catch( (error) => console.error("Error on MondoDB: ", error) );

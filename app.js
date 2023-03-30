@@ -29,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api/v1', productsApiRouter);
 
 //database conecction
+console.log(config.get("mongodb.uri"));
 mongoose.connect(config.get("mongodb.uri"),{
     useNewUrlParser: true,
     useUnifiedTopology: true,

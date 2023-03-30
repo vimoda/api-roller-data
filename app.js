@@ -24,7 +24,6 @@ app.use(cookieParser());
 app.set("views", "./views");
 app.set("view engine", "pug");
 app.use(express.static(path.join(__dirname, 'public')));
-//Routes Web
 //routes API
 app.use('/api/v1', productsApiRouter);
 

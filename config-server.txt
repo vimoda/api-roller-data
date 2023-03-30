@@ -9,3 +9,11 @@ Confirmar informacion
 
 Privilegios de usuario
     usermod -aG sudo dvm1
+
+Instalar docker
+sudo apt-get install docker
+sudo apt-get install docker-compose
+
+Configurar git
+ssh-keygen -t rsa -b 4096 -C
+Error: option requires an argument -- C
